@@ -2,10 +2,12 @@ import { http } from "./http";
 import { API } from "../config/env";
 
 export interface Asset {
-    id?: string;
-    assetCode: string;
+    id?: number;
+    assetCode?: string;
     name: string;
     type: string;
+    status?: string;
+    createdAt?: string;
 }
 
 export const AssetAPI = {

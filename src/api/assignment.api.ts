@@ -4,7 +4,8 @@ import { API } from "../config/env";
 export interface Assignment {
     id?: string;
     employeeCode: string;
-    assetCode: string;
+    assetId?: string | number;
+    assetCode?: string;
 }
 
 export const AssignmentAPI = {

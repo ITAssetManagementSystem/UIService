@@ -60,8 +60,8 @@ export default function Assets() {
 
             <List>
                 {assets.map(a => (
-                    <ListItem key={a.assetCode}>
-                        {a.assetCode} – {a.name}
+                    <ListItem key={a.id}>
+                        {a.id} – {a.name}
                     </ListItem>
                 ))}
             </List>
