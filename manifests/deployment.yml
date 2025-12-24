@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui-service
+  namespace: it-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ui-service
+  template:
+    metadata:
+      labels:
+        app: ui-service
+    spec:
+      containers:
+        - name: ui-service
+          image: devacr231225.azurecr.io/ui-service:v5
+          ports:
+            - containerPort: 80
+          env:
+            - name: REACT_APP_EMPLOYEE_API
+              value: http://employee.sikshasathi.tech
+            - name: REACT_APP_ASSET_API
+              value: http://asset.sikshasathi.tech
+            - name: REACT_APP_ASSIGNMENT_API
+              value: http://assignment.sikshasathi.tech
+            - name: REACT_APP_REPORTING_API
+              value: http://reporting.sikshasathi.tech
