@@ -15,15 +15,15 @@ spec:
     spec:
       containers:
         - name: ui-service
-          image: devacr231225.azurecr.io/ui-service:v5
+          image: devacr301225.azurecr.io/ui-service:v5
           ports:
             - containerPort: 80
           env:
             - name: REACT_APP_EMPLOYEE_API
-              value: https://employee.sikshasathi.tech
+              value: http://employee.megcloud.space
             - name: REACT_APP_ASSET_API
-              value: https://asset.sikshasathi.tech
+              value: http://asset.megcloud.space
             - name: REACT_APP_ASSIGNMENT_API
-              value: https://assignment.sikshasathi.tech
+              value: http://assignment.megcloud.space
             - name: REACT_APP_REPORTING_API
-              value: https://reporting.sikshasathi.tech
+              value: http://reporting.megcloud.space

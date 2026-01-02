@@ -1,11 +1,12 @@
 const getEnv = (key: string, fallback: string) =>
-    (window as any)._env_?.[key] ||
-    process.env[`REACT_APP_${key}`] ||
-    fallback;
+  (window as any)._env_?.[key] ||
+  process.env[`REACT_APP_${key}`] ||
+  fallback;
 
 export const API = {
-    EMPLOYEE: getEnv("EMPLOYEE_API", "https://employee.sikshasathi.tech"),
-    ASSET: getEnv("ASSET_API", "https://asset.sikshasathi.tech"),
-    ASSIGNMENT: getEnv("ASSIGNMENT_API", "https://assignment.sikshasathi.tech"),
-    REPORTING: getEnv("REPORTING_API", "https://reporting.sikshasathi.tech")
+  EMPLOYEE: getEnv("EMPLOYEE_API", "http://employee.megcloud.space"),
+  ASSET: getEnv("ASSET_API", "http://asset.megcloud.space"),
+  ASSIGNMENT: getEnv("ASSIGNMENT_API", "http://assignment.megcloud.space"),
+  REPORTING: getEnv("REPORTING_API", "http://reporting.megcloud.space"),
 };
+
