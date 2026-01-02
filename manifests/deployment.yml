@@ -20,10 +20,10 @@ spec:
             - containerPort: 80
           env:
             - name: REACT_APP_EMPLOYEE_API
-              value: http://employee.sikshasathi.tech
+              value: https://employee.sikshasathi.tech
             - name: REACT_APP_ASSET_API
-              value: http://asset.sikshasathi.tech
+              value: https://asset.sikshasathi.tech
             - name: REACT_APP_ASSIGNMENT_API
-              value: http://assignment.sikshasathi.tech
+              value: https://assignment.sikshasathi.tech
             - name: REACT_APP_REPORTING_API
-              value: http://reporting.sikshasathi.tech
+              value: https://reporting.sikshasathi.tech
