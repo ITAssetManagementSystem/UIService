@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: devacr301225.azurecr.io/ui-service
-  tag: 54dec62e54e083deced62c590466f65bae70f944
+  tag: acdc8a8454d4ef86755236a1acfba7faed645b70
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
