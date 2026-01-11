@@ -10,7 +10,7 @@ export default function Dashboard() {
     }, []);
 
     return (
-        <PageWrapper title="System Summary">
+        <PageWrapper title="Report Summary">
             <pre>{JSON.stringify(data, null, 2)}</pre>
         </PageWrapper>
     );
