@@ -20,10 +20,10 @@ spec:
             - containerPort: 80
           env:
             - name: REACT_APP_EMPLOYEE_API
-              value: https://employee.megcloud.space
+              value: https://employee.sikshasathi.tech
             - name: REACT_APP_ASSET_API
-              value: https://asset.megcloud.space
+              value: https://asset.sikshasathi.tech
             - name: REACT_APP_ASSIGNMENT_API
-              value: https://assignment.megcloud.space
+              value: https://assignment.sikshasathi.tech
             - name: REACT_APP_REPORTING_API
-              value: https://reporting.megcloud.space
+              value: https://reporting.sikshasathi.tech
